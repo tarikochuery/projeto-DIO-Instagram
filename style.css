@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgba(250,250,250,1);
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.img-container{
+  align-self: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilização Vitrine */
+
+#vitrine{
+  margin: 32px auto 0;
+  padding-bottom: 32px;
+  max-width: 935px;
+  width: 100%;
+  /* height: 100vh; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-grow: 1;
+}
+
+#vitrine > .img-container{
+  margin-right: 32px;
+  margin-bottom: 12px;
+  align-items: stretch;
+  display: flex;
+
+  align-self: center;
+  /* flex-basis: 380.32px; */
+  /* height: 581.15px; */
+  width: 55%;
+}
+
+#vitrine .img-container img{
+  max-width: 100%;
+}
+
+#vitrine .container{
+  width: 50px;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Estilização Formulário */
+
+.form-container{
+  width: 100%;
+
+  margin: 0 0 10px;
+  padding: 10px 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #fff;
+  border: 1px solid rgba(219,219,219,1);
+  border-radius: 1px;
+
+  flex: 1
+}
+
+.form-container .img-container{
+  margin-top: 36px;
+  margin-bottom: 12px;
+}
+
+.form-container .form{
+  max-width: 350px;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input:focus{
+  outline: none;
+}
+
+.form .input{
+  height: 36px;
+  width: 100%;
+  margin: 6px 0;
+  padding: 9px 0 7px 8px;
+
+  border: 1px solid rgba(219, 219, 219, 1);
+  border-radius: 3px;
+  background-color:rgba(250,250,250,1) ;
+  color: rgba(38, 38, 38, 1);
+
+  font-size: 14px;
+}
+
+.form .btn{
+  height: 30px;
+  width: 100%;
+  line-height: 18px;
+  margin: 8px auto;
+
+  background-color: rgba(0, 149, 246, .3);
+  opacity: 1;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  
+  font-size: 14px;
+  color: rgba(255,255,255,1);
+  font-weight: 700;
+  padding: 5px 9px;
+}
+
+/* Estilização da Divisória */
+
+.divider-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 10px 40px 18px;
+}
+
+.divider-container p{
+  color: rgba(142,142,142,1);
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0 18px;
+  text-transform: uppercase;
+  line-height: 15px;
+}
+
+.divider-container .divider{
+  height: 1px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: rgba(219,219,219,1);
+  position: relative;
+  top: 0.45em;
+}
+
+/* Estilização Login com Facebook */
+
+.facebook-login{
+  margin: 8px 40px;
+
+  color: #385185;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.facebook-login img{
+  height: 16px;
+  width: 16px;
+  margin-right: 8px;
+}
+
+.facebook-login p{
+  font-size: 14px;
+}
+
+.forgot-password{
+  font-size: 12px;
+  color: rgba(0, 55, 107, 1);
+  text-align: center;
+  margin-top: 12px;
+  line-height: 16px;
+}
+
+/* Estilização Sign Up */
+
+.sign-up{
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(219, 219, 219, 1);
+  border-radius: 1px;
+  
+  padding: 10px 0;
+  margin: 0 0 10px;
+  
+  flex: 0;
+}
+
+.sign-up p{
+  margin: 15px;
+  color: rgba(38, 38, 38, 1);
+  font-size: 14px;
+}
+
+.sign-up p a{
+  color: rgba(0, 149, 246, 1);
+}
+
+/* Estilizando App Btn */
+
+.app-container{
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  vertical-align: baseline;
+}
+
+.app-container p{
+  color: rgba(38, 38, 38, 1);
+  font-size: 14px;
+  line-height: 18px;
+  margin: 10px 20px;
+  text-align: center;
+}
+
+.app-container .app-link-container{
+  margin: 10px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.app-container .app-link-container a{
+  margin-right: 8px;
+  width: 100%;
+
+  display: flex;
+}
+
+/* Estilização do Rodapé */
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+
+  margin: 0 auto;
+  padding: 0 20px;
+
+  width: 100%;
+  max-width: 935px;
+}
+
+footer .footer-container{
+  margin-bottom: 52px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer-container ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-container ul li{
+  flex: 0;
+  margin-right: 8px;
+  margin-left: 8px;
+  margin-bottom: 12px;
+  white-space: nowrap;
+
+  color: rgba(0, 55, 107, 1);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+footer .footer-container .copy{
+  display: flex;
+
+  margin: 12px 0;
+  align-items: center;
+  justify-content: center;
+
+  color: rgba(0, 55, 107, 1);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+footer .footer-container .copy p{
+  margin-left: 16px;
+}
+
+@media (max-width: 875px) {
+  #vitrine > .img-container{
+    display: none;
+  }
+
+  #vitrine .container{
+    max-width: 370px
+  }
+}
